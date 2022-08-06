@@ -2,7 +2,8 @@ import itertools
 
 
 def solution(mylist):
-    answer = sum(mylist, [])
+    answer = list(itertools.chain.from_iterable(mylist))
+    # answer = sum(mylist, [])
 
     return answer
 
